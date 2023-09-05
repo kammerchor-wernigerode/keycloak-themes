@@ -1,4 +1,4 @@
-# keycloak-themes
+# KCW: Keycloak Theme
 
 Keycloak is an authorization provider that implements the OAuth2 and OpenID Connect protocols. It manages software
 clients, users, their roles and claims for the project.
