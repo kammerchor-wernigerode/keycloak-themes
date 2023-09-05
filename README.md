@@ -18,8 +18,8 @@ Keycloak is preconfigured with a variety of users that are more or less useful. 
 
 | Username             | Password             | Description            | Realm  | URL                                         |
 |----------------------|----------------------|------------------------|--------|---------------------------------------------|
-| <mark>`admin`</mark> | <mark>`admin`</mark> | Realm superuser        | local  | http://localhost:8180/admin/local/console/  |
-| `admin`[^1]          | `admin`[^1]          | Keycloak administrator | master | http://localhost:8180/admin/master/console/ |
+| <mark>`admin`</mark> | <mark>`admin`</mark> | Realm superuser        | local  | http://localhost:8080/admin/local/console/  |
+| `admin`[^1]          | `admin`[^1]          | Keycloak administrator | master | http://localhost:8080/admin/master/console/ |
 
 [^1]: Corresponds to the values of `KEYCLOAK_ADMIN` and `KEYCLOAK_ADMIN_PASSWORD`, set for Composes' _keycloak_ service.
 
