@@ -5,6 +5,7 @@ services:
       - "8080:8080"
     volumes:
       - ./docker/keycloak/provisioning:/opt/keycloak/data/import
+      - ./src:/opt/keycloak/themes/kcw
     command: |
       start-dev
       --import-realm

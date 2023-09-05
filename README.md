@@ -6,6 +6,11 @@ clients, users, their roles and claims for the project.
 This project contains a custom theme that captures the look and feel of the organization's corporate design.
 
 
+## Themes
+
+Login: <http://localhost:8080/admin/local/console/>
+
+
 ## Users
 
 Keycloak is preconfigured with a variety of users that are more or less useful. The username-password-combination
