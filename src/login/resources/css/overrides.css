@@ -1,4 +1,8 @@
 :root {
+  --pf-global--primary-color--100: #012B3A;
+
+  --kcw-color-primary: #012B3A;
+  --kcw-color-secondary: #FF8F89;
   --kcw-color-background: #E5E9EB;
 }
 
@@ -11,4 +15,15 @@ div.kc-logo-text {
 
 .login-pf body {
   background: var(--kcw-color-background);
+}
+
+.pf-c-button {
+  --pf-c-button--m-primary--hover--BackgroundColor: var(--kcw-color-secondary);
+  --pf-c-button--m-primary--focus--BackgroundColor: var(--kcw-color-secondary);
+  --pf-c-button--m-primary--active--BackgroundColor: var(--kcw-color-primary);
+}
+
+.pf-c-form-control {
+  --pf-c-form-control--hover--BorderBottomColor: var(--kcw-color-primary);
+  --pf-c-form-control--focus--BorderBottomColor: var(--kcw-color-primary);
 }
