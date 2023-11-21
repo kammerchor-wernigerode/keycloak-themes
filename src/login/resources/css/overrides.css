@@ -2,6 +2,13 @@
   --kcw-color-background: #E5E9EB;
 }
 
+div.kc-logo-text {
+  background: url(../img/kcw-logo.png) no-repeat center center;
+  background-size: contain;
+  height: 150px;
+  width: unset;
+}
+
 .login-pf body {
   background: var(--kcw-color-background);
 }
