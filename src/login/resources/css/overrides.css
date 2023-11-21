@@ -1,0 +1,7 @@
+:root {
+  --kcw-color-background: #E5E9EB;
+}
+
+.login-pf body {
+  background: var(--kcw-color-background);
+}
