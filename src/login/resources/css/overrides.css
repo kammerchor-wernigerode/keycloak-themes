@@ -27,3 +27,13 @@ div.kc-logo-text {
   --pf-c-form-control--hover--BorderBottomColor: var(--kcw-color-primary);
   --pf-c-form-control--focus--BorderBottomColor: var(--kcw-color-primary);
 }
+
+@media (max-width: 767px) {
+  .login-pf-page .card-pf {
+    border-top: 4px solid;
+  }
+
+  div.kc-logo-text {
+    height: 100px;
+  }
+}
