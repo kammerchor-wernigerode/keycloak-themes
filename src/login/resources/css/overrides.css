@@ -11,8 +11,15 @@
   --pf-global--BackgroundColor--light-200: #F7F7F7;
   --pf-global--BackgroundColor--light-300: #E5E9EB;
 
+  --pf-global--BackgroundColor--dark-100: #1E2C31;
+  --pf-global--BackgroundColor--dark-200: #162026;
+  --pf-global--BackgroundColor--dark-300: #0E161A;
+
   --pf-global--Color--100: var(--pf-global--Color--dark-100);
   --pf-global--Color--200: var(--pf-global--Color--dark-200);
+
+  --pf-global--Color--light-100: #E5E9EB;
+  --pf-global--Color--light-200: #D1D5D8;
 
   --pf-global--Color--dark-100: #363636;
   --pf-global--Color--dark-200: #4F4F4F;
@@ -59,5 +66,26 @@ div.kc-logo-text {
 
   div.kc-logo-text {
     height: 100px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --kcw-logo-background-url: url(../img/weiß_logo_horizontal@3x.png);
+
+    --pf-global--Color--100: var(--pf-global--Color--light-100);
+    --pf-global--Color--200: var(--pf-global--Color--light-200);
+
+    --pf-global--BackgroundColor--100: var(--pf-global--BackgroundColor--dark-100);
+    --pf-global--BackgroundColor--150: var(--pf-global--BackgroundColor--dark-200);
+    --pf-global--BackgroundColor--200: var(--pf-global--BackgroundColor--dark-300);
+  }
+
+  .pf-c-form-control {
+    --pf-c-form-control--hover--BorderBottomColor: var(--kcw-color-secondary);
+  }
+
+  .pf-c-button {
+    --pf-c-button--m-control--hover--after--BorderBottomColor: var(--kcw-color-secondary);
   }
 }
