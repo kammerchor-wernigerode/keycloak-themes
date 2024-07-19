@@ -1,31 +1,55 @@
 :root {
-  --pf-global--primary-color--100: #012B3A;
-
   --kcw-color-primary: #012B3A;
   --kcw-color-secondary: #FF8F89;
-  --kcw-color-background: #E5E9EB;
+  --kcw-logo-background-url: url(../img/kcw-logo.png);
+
+  --pf-global--BackgroundColor--100: var(--pf-global--BackgroundColor--light-100);
+  --pf-global--BackgroundColor--150: var(--pf-global--BackgroundColor--light-200);
+  --pf-global--BackgroundColor--200: var(--pf-global--BackgroundColor--light-300);
+
+  --pf-global--BackgroundColor--light-100: #FFFFFF;
+  --pf-global--BackgroundColor--light-200: #F7F7F7;
+  --pf-global--BackgroundColor--light-300: #E5E9EB;
+
+  --pf-global--Color--100: var(--pf-global--Color--dark-100);
+  --pf-global--Color--200: var(--pf-global--Color--dark-200);
+
+  --pf-global--Color--dark-100: #363636;
+  --pf-global--Color--dark-200: #4F4F4F;
+
+  --pf-global--primary-color--100: var(--kcw-color-secondary);
+  --pf-global--primary-color--200: #FF7070;
+
+  --pf-global--danger-color--100: #D32F2F;
+  --pf-global--danger-color--200: #B71C1C;
 }
 
 div.kc-logo-text {
-  background: url(../img/kcw-logo.png) no-repeat center center;
+  background: var(--kcw-logo-background-url) no-repeat center center;
   background-size: contain;
   height: 150px;
   width: unset;
 }
 
 .login-pf body {
-  background: var(--kcw-color-background);
-}
-
-.pf-c-button {
-  --pf-c-button--m-primary--hover--BackgroundColor: var(--kcw-color-secondary);
-  --pf-c-button--m-primary--focus--BackgroundColor: var(--kcw-color-secondary);
-  --pf-c-button--m-primary--active--BackgroundColor: var(--kcw-color-primary);
+  color: var(--pf-global--Color--100);
+  background: var(--pf-global--BackgroundColor--150);
 }
 
 .pf-c-form-control {
   --pf-c-form-control--hover--BorderBottomColor: var(--kcw-color-primary);
-  --pf-c-form-control--focus--BorderBottomColor: var(--kcw-color-primary);
+}
+
+.pf-c-button {
+  --pf-c-button--m-control--hover--after--BorderBottomColor: var(--kcw-color-primary);
+}
+
+.required {
+  color: var(--pf-global--danger-color--100);
+}
+
+.card-pf {
+  background-color: var(--pf-global--BackgroundColor--100);
 }
 
 @media (max-width: 767px) {
