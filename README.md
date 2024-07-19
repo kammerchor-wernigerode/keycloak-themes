@@ -34,6 +34,6 @@ perform the following command. This will start a new Keycloak instance inside th
 _local_ realm and its users.
 
 ```shell
- $ docker compose -f docker-compose.yml -f docker-compose.yml exec keycloak \
+ $ docker compose exec keycloak \
        /opt/keycloak/bin/kc.sh export --dir /opt/keycloak/data/import --realm local --users realm_file
 ```
