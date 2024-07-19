@@ -1,7 +1,7 @@
 :root {
   --kcw-color-primary: #012B3A;
   --kcw-color-secondary: #FF8F89;
-  --kcw-logo-background-url: url(../img/kcw-logo.png);
+  --kcw-logo-background-url: url(../img/blau_logo_horizontal@3x.png);
 
   --pf-global--BackgroundColor--100: var(--pf-global--BackgroundColor--light-100);
   --pf-global--BackgroundColor--150: var(--pf-global--BackgroundColor--light-200);
